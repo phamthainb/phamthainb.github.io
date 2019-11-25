@@ -1,1 +1,1 @@
-<a href="https://phamthainb.github.io/project-reactjs/to-do-list/" target="_blank">link view</a>
+<a href="https://phamthainb.github.io/project-reactjs/to-do-list/" target="_blank" >link view</a>
