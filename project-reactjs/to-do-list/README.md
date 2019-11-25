@@ -1,1 +1,1 @@
-# [link view](https://phamthainb.github.io/project-reactjs/to-do-list/)
+### [link view](https://phamthainb.github.io/project-reactjs/to-do-list/){:target="_blank"} 
