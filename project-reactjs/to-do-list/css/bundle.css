@@ -1,0 +1,44 @@
+header,
+footer {
+  text-align: center;
+}
+main .input--name {
+  max-width: 500px;
+  margin: 0 auto;
+}
+main .input--name .btn {
+  margin: 0px 20px;
+}
+main .list--task .task {
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+main .list--task .task .task--name {
+  min-width: 200px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+main .list--task .task .task--name.strikeout {
+  position: relative;
+}
+main .list--task .task .task--name.strikeout::after {
+  border-bottom: 0.125em solid rgba(255, 0, 0, 0.5);
+  content: "";
+  left: 0;
+  line-height: 1em;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 60%;
+}
+main .list--task .task .task--btn {
+  display: flex;
+}
+main .list--task .task .task--btn .task--btn--edit {
+  margin-right: 20px;
+}
+
