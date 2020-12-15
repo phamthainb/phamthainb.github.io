@@ -1,9 +1,9 @@
-title: Hacker-Blog
-description: "A Jekyll Blog Theme For Hackers"
+title: phamthainb
+description: "Bờ lốc cá nhân, nơi để tôi chia sẻ mọi thứ..."
 author:
-  name: "SomeHacker"
-  email: "someone@somewebsite.somedomain"
-  url: "https://ashishchaudhary.in/hacker-blog"
+  name: "phamthainb"
+  email: "phamthai4643@gmail.com"
+  url: "#"
 
 baseurl: /
 
@@ -28,5 +28,5 @@ plugins:
   - jekyll-sitemap
 
 # Custom variables
-owner : "SomeHacker"
+owner : "phamthainb"
 year : "2020"
