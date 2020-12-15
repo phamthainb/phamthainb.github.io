@@ -1,32 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>host</title>
-</head>
-<body>
-    <div class="nav">
-        <ul>
-            <li><a href="https://phamthainb.github.io/cv/index.html">cv</a></li>
-            <li><a href="https://phamthainb.github.io/project-html/index.html">project-html</a></li>
-            <li><a href="https://phamthainb.github.io/minmap">minmap</a></li>
-            <li><a href="https://phamthainb.github.io/project-reactjs/index.html">project-reactjs</a></li>
-            <li><a href="https://phamthainb.github.io/vat_ly_3.html">vatly</a></li>
-            <li><a href="https://phamthainb.github.io/trr.html">____trr</a></li>
-            <li><a href="https://phamthainb.github.io/">____</a></li>
-            <li><a href="https://phamthainb.github.io/">____</a></li>
-            <li><a href="https://phamthainb.github.io/">____</a></li>
-            <li><a href="https://phamthainb.github.io/">____</a></li>
-            <li><a href="https://phamthainb.github.io/">____</a></li>
-            <li><a href="https://phamthainb.github.io/">____</a></li>
-            <li><a href="https://phamthainb.github.io/">____</a></li>
-            <li><a href="https://phamthainb.github.io/">____</a></li>
-           
-        </ul>
-    </div>
-      <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=4ddf6005bd8c7ff05bd84f52b66a4150f9f38b23'></script>
-     <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/613135/t/0"></script>
-</body>
-</html>
+---
+layout: default
+---
+
+<ul>
+    {% for post in paginator.posts %}
+      <li>
+          <h2><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h2>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+          <p>{{ post.content | strip_html | truncatewords:50 }}</p>
+      </li>
+    {% endfor %}
+</ul>
