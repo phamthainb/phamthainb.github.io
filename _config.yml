@@ -26,7 +26,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
-
+  - jekyll-compose
+  
 # Custom variables
 owner : "phamthainb"
 year : "2020"
