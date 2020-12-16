@@ -14,12 +14,12 @@ paginate: 3
 paginate_path: /page/:num/
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
+      toc: true
 
 future: true
 plugins:
@@ -27,8 +27,14 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-compose
-  
+  - jekyll-toc
+#end plugins
+
+# config toc
+toc:
+  max_level: 3 # default: 6
+
 # Custom variables
-owner : "phamthainb"
-year : "2020"
+owner: "phamthainb"
+year: "2020"
 google_analytics: G-XV52QZCWCD
