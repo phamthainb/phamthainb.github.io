@@ -27,7 +27,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-compose
-  - jekyll-toc
+  # - jekyll-toc
 #end plugins
 
 # config toc

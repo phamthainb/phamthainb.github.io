@@ -32,4 +32,18 @@
     title="ATOM Feed"
   />
   {% seo %}
+  <!-- toc -->
+  <link rel="stylesheet" type="text/css" href="../css/toc.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="../js/jquery.toc.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#post-content").toc({
+        showAlways: true,
+        renderIn: "#toc-nav",
+        contentsText: "Table of contents",
+      });
+    });
+  </script>
+  <!-- toc end -->
 </head>

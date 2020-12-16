@@ -1,6 +1,6 @@
 ---
 layout: default
-toc: true
+<!-- toc: true -->
 ---
 
 <article>
@@ -8,10 +8,6 @@ toc: true
   <time datetime="{{ page.date | date_to_xmlschema }}" class="by-line"
     >{{ page.date | date_to_string }}</time
   >
-  <nav aria-label="Table of Contents">
-    <h3>Table of Contents</h3>
-    {{ content | toc_only }}
-  </nav>
-  <hr />
-  <section itemprop="articleBody">{{ content }}</section>
+  <div id="toc-nav"></div>
+  <div id="post-content">{{ content }}</div>
 </article>
