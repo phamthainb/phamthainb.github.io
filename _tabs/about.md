@@ -13,4 +13,4 @@ order: 4
 
 > Tôi là Phạm Hồng Thái. 
 >>
-Hãy cho tối biết vì sao bạn đến đây?
+Hãy cho tôi biết vì sao bạn đến đây?

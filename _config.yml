@@ -6,37 +6,32 @@
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # --------------------------
-title: phamthainb # the main title
 
-tagline: Thanks for coming. # it will display as the sub-title
-
-description: >- # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+# common settings information
+title: phamthainb
+tagline: Thanks for coming.
+description: phamthainb.
 
 # fill in the base hostname & protocol for your site, e.g., 'https://username.github.io'
 url: ""
-
-author: phamthainb # change to your full name
-
-avatar: /assets/img/settings/favicons.jpg # support internet resources
+author: phamthainb
+avatar: /assets/img/settings/favicons.jpg
 
 github:
-  username: phamthainb # change to your github username
+  username: phamthainb
 
 twitter:
-  username: phamthainb # change to your twitter username
+  username: phamthainb
 
 social:
   name: phamthainb # it will shows as the copyright owner in Footer
-  email: phamthai4643@gmail.com # change to your email address
+  email: phamthai4643@gmail.com
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/phamthainb # change to your twitter homepage
-    - https://github.com/phamthainb # change to your github homepage
-    # Uncomment below to add more social links
+    - https://github.com/phamthainb
     - https://www.facebook.com/phamthainb
+    - https://twitter.com/phamthainb
+    # Uncomment below to add more social links
     # - https://www.linkedin.com/in/username
 
 google_site_verification: google_meta_tag_verification # change to your verification string
@@ -47,7 +42,7 @@ google_site_verification: google_meta_tag_verification # change to your verifica
 baseurl: ""
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Vietnam
+timezone: Asia/Ho_Chi_Minh
 
 google_analytics:
   id: "" # Fill with your Google Analytics ID
@@ -60,23 +55,14 @@ google_analytics:
     proxy_endpoint: ""
     cache: false # pv data local cache, good for the users from GFW area.
 
+# plugin for comments
 disqus:
-  comments: false # boolean type, the global switch for posts comments.
+  comments: true # boolean type, the global switch for posts comments.
   shortname: "" # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light  - Use the light color scheme
-#
-#     dark   - Use the dark color scheme
-#
-theme_mode: # <light|dark>
+# Settings website
+# theme mode { " " || "light" || "dark"}
+theme_mode:
 
 # boolean type, the global switch for ToC in posts.
 toc: true
