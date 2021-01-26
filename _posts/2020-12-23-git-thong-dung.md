@@ -43,3 +43,12 @@ VD: Khi lỡ push cả `node-modules` lên trên remote, và muốn nó bay màu
 - git filter-branch --force --index-filter "git rm --cached --ignore-unmatch PATH-TO-FILE" --prune-empty --tag-name-filter cat -- --all
 - git push origin --force --all
 ```
+- Dùng `filter-branch` để xóa lịch sử commit, push của file, fodler.
+
+
+
+
+
+
+
+
