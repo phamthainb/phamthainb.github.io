@@ -6,7 +6,7 @@ date: 2021-03-11 10:31 +0700
 
 # Mục tiêu
 
-Trong bài viết này chúng ta sẽ tiến hành cấu hình môi trường để deploy ứng dụng React với Nginx trong Docker.
+Trong bài viết này chúng ta sẽ tiến hành cấu hình môi trường để deploy ứng dụng React với Nginx trong ```Docker```.
 
 # Tiến hành
 
@@ -53,7 +53,7 @@ Tiếp đó ta thêm 1 vài file config sau
     └── yarn.lock
 ```
 
-### 2.1. `.dockerignore`
+### 2.1. ```.dockerignore```
 
 Nó sẽ ignore các file chúng ta không muốn copy vào trong image, từ đó giúp cho giảm kích thước của image tối đa.
 
@@ -67,11 +67,11 @@ build
 **/node_modules
 ```
 
-### 2.2. Folder `.nginx`
+### 2.2. Folder ```.nginx```
 
-Đây sẽ folder để config `nginx`
+Đây sẽ folder để config ```nginx```
 
-File `nginx.conf`
+File ```nginx.conf```
 
 {% highlight nginx %}
     server {    
@@ -92,11 +92,11 @@ File `nginx.conf`
     }
 {% endhighlight %}
 
-- `listen 80`: `nginx` sẽ listen port 80 trong container để hiển thị app.
-- `try_files`: Đối với React sẽ là single page, tức là chỉ có 1 route duy nhất để hiển thị toàn bộ app. Với thứ tự `try_files` như trên nginx sẽ duyệt lần lượt theo thứ tự `$uri > /index.html > 404(not found page)` để kiểm tra, nếu k hợp lệ thì sẽ chuyển đến route tiếp theo để kiểm tra và hiển thị.
-- `error_page`: một vào route lỗi hiển thị mặc định.
+- ```listen 80```: ```nginx``` sẽ listen port 80 trong container để hiển thị app.
+- ```try_files```: Đối với React sẽ là single page, tức là chỉ có 1 route duy nhất để hiển thị toàn bộ app. Với thứ tự ```try_files``` như trên nginx sẽ duyệt lần lượt theo thứ tự ```$uri > /index.html > 404(not found page)``` để kiểm tra, nếu k hợp lệ thì sẽ chuyển đến route tiếp theo để kiểm tra và hiển thị.
+- ```error_page```: một vào route lỗi hiển thị mặc định.
 
-### 2.3. File `Dockerfile`
+### 2.3. File ```Dockerfile```
 
 {% highlight docker %}
     # 1. For build React app
@@ -127,7 +127,7 @@ File `nginx.conf`
     ENTRYPOINT ["nginx", "-g", "daemon off;"]
 {% endhighlight %}
 
-### 2.4. Folder `docker-compose.yml`
+### 2.4. Folder ```docker-compose.yml```
 
 Để đơn giản cho việc run Docker và tích hợp với nhiều service khác, ta sẽ viết thêm docker-compose.yml
 
@@ -185,6 +185,6 @@ Sau khi run xong chúng ta xem ứng dụng ở [http://localhost:3000](http://l
 
 
 # 3. Tổng kết
-Trên đây là hướng dẫn cấu hình để triển khai 1 ứng dụng React, Nginx trong Docker.
+Trên đây là hướng dẫn cấu hình để triển khai 1 ứng dụng React, Nginx trong ```Docker```.
 
 Các bạn có thể xem code tại đây [github](https://github.com/docker/awesome-compose/tree/master/react-nginx)
