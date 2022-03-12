@@ -220,6 +220,7 @@ $sidebar-display: "sidebar-display";
 
 #profile-wrapper {
   margin-top: 2rem;
+  align-items: center !important;
 }
 
 #avatar {
@@ -1436,7 +1437,7 @@ div.post-content .table-wrapper {
       -ms-flex-line-pack: center!important;
       align-content: center!important;
       > div {
-        text-align: left !important;
+        text-align: center !important;
         width: 100%;
       }
     }
